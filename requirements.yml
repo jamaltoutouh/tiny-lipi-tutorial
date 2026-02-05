@@ -1,0 +1,12 @@
+name: coevolution-tutorial
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch
+  - matplotlib
+  - pandas
+  - jupyter
+  - ipykernel
+  - pip
