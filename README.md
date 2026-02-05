@@ -6,9 +6,10 @@ This repository contains the code and resources for the tutorial "Coevolution fo
 
 The tutorial explores:
 1.  **Introductory Genetic Algorithms**: Simple examples (OneMax) to understand the core concepts of selection, crossover, and mutation.
-2.  **Standard GAN Training**: Understanding the baseline dynamics of single-pair GAN training.
-3.  **Population-Based Training (Co-evolution)**: Training populations of Generators and Discriminators to improve stability and diversity.
-4.  **Evolutionary Strategies**: optimization of ensemble weights using non-gradient based methods.
+2.  **Simple Competitive Coevolution Algorithm**: Introduces the binary bilinear problem to demonstrate co-evolutionary dynamics in a simplified setting.
+3.  **Standard GAN Training**: Understanding the baseline dynamics of single-pair GAN training.
+4.  **Population-Based Training (Co-evolution)**: Training populations of Generators and Discriminators to improve stability and diversity.
+  - **Evolutionary Strategies**: optimization of ensemble weights using non-gradient based methods.
 
 
 ## File Structure & Explanations
@@ -19,6 +20,11 @@ The tutorial explores:
   - A standalone educational notebook introducing Genetic Algorithms.
   - Solves the "OneMax" problem (maximizing the number of 1s in a bitstring).
   - Used to teach the primitives of Evolution: Selection, Crossover, and Mutation.
+
+- **`binary_bilinear_ccea.ipynb`**
+  - Implements a Competitive Co-Evolutionary Algorithm for the Binary Bilinear Maximin Problem.
+  - Demonstrates how two populations (X and Y) evolve against each other with opposing objectives (X maximizes, Y minimizes).
+  - Visualizes the fitness dynamics over generations to show how populations adapt to each other's strategies.
 
 - **`coevolutionary_GAN.ipynb`**
   - **The Main Tutorial Notebook**.
@@ -33,16 +39,13 @@ The tutorial explores:
   - Serves as a baseline to understand the mode collapse problem on the Ring Dataset before moving to more complex population methods.
   - Uses the same `Visualizer` for real-time monitoring.
 
-### Examples
+### EA and CCEA Examples
 
 - **`onemax_ea.py`**
   - A pure Python script implementation of the OneMax Genetic Algorithm.
   - Useful for running the GA without a notebook interface.
 
-- **`binary_bilinear_ccea.py`**
-  - Implements a Competitive Co-Evolutionary Algorithm for the Binary Bilinear Maximin Problem.
-  - Demonstrates how two populations (X and Y) evolve against each other with opposing objectives.
-  - Includes visualization of fitness dynamics over generations.
+
 
 ### Core Modules
 
