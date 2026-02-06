@@ -16,17 +16,22 @@ The tutorial explores:
 
 ### Notebooks
 
-- **`onemax_ea.ipynb`**
+- **`onemax_ea.ipynb`** [Colab](https://colab.research.google.com/drive/1LfOZQ8X1axbNHbipMRU-hj0L0KPhASGp?usp=sharing)
   - A standalone educational notebook introducing Genetic Algorithms.
   - Solves the "OneMax" problem (maximizing the number of 1s in a bitstring).
   - Used to teach the primitives of Evolution: Selection, Crossover, and Mutation.
 
-- **`binary_bilinear_ccea.ipynb`**
+- **`binary_bilinear_ccea.ipynb`** [Colab](https://colab.research.google.com/drive/1IGMeM2zvAO4oXE8bPoDo76o_nAJ5TptI?usp=sharing)
   - Implements a Competitive Co-Evolutionary Algorithm for the Binary Bilinear Maximin Problem.
   - Demonstrates how two populations (X and Y) evolve against each other with opposing objectives (X maximizes, Y minimizes).
   - Visualizes the fitness dynamics over generations to show how populations adapt to each other's strategies.
 
-- **`coevolutionary_GAN.ipynb`**
+- **`simple_GAN.ipynb`** [Colab](https://colab.research.google.com/drive/1GbllWAjVRrkQe4xvwePsxQp_yGCHZ9OC?usp=sharing)
+  - An introductory notebook implementing a standard, single-pair GAN.
+  - Serves as a baseline to understand the mode collapse problem on the Ring Dataset before moving to more complex population methods.
+  - Uses the same `Visualizer` for real-time monitoring.
+
+- **`coevolutionary_GAN.ipynb`** [Colab](https://colab.research.google.com/drive/1kTak_WqS17_zApMtaF-_j2Cgpr_pEj93?usp=sharing)
   - **The Main Tutorial Notebook**.
   - Implements a Competitive Co-evolutionary algorithm where a population of Generators evolves against a population of Discriminators.
   - Features:
@@ -34,18 +39,15 @@ The tutorial explores:
     - Co-evolutionary training loop.
     - **Ensemble Weight Evolution**: Optimizes the weights of the generator ensemble to minimize Sliced Wasserstein Distance (SWD) using Evolutionary Strategies (ES).
 
-- **`simple_GAN.ipynb`**
-  - An introductory notebook implementing a standard, single-pair GAN.
-  - Serves as a baseline to understand the mode collapse problem on the Ring Dataset before moving to more complex population methods.
-  - Uses the same `Visualizer` for real-time monitoring.
-
 ### EA and CCEA Examples
 
 - **`onemax_ea.py`**
   - A pure Python script implementation of the OneMax Genetic Algorithm.
   - Useful for running the GA without a notebook interface.
 
-
+- **`binary_bilinear_ccea.py`**
+  - A pure Python script implementation of the Binary Bilinear Competitive Co-Evolutionary Algorithm.
+  - Useful for running the CCEA without a notebook interface. 
 
 ### Core Modules
 
